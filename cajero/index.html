@@ -7,29 +7,6 @@
     <link type="text/css" href="style.css" rel="stylesheet">
 </head>
 <body>
-
-    <style>
-        .left, .right {
-          float: left;
-          width: 20%; /* The width is 20%, by default */
-        }
-        
-        .main {
-          float: left;
-          width: 60%; /* The width is 60%, by default */
-        }
-        
-        /* Use a media query to add a breakpoint at 800px: */
-        @media screen and (max-width: 800px) {
-          .left, .main, .right {
-            width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
-          }
-        }
-        </style>
-
-
-
-
 <form action="">
 <h1>Ingresa Usuario</h1>
 <label for="">Usuario</label>
@@ -51,7 +28,17 @@ alert("error de usuario");
 }
 }
 
-
+function login(form){
+if (form.u.value=="maui") {
+if (form.c.value=="123") {
+    location="maui.html";
+} else {
+alert("error de password");
+}
+} else {
+alert("error de usuario");
+}
+}
 
 
 </script>
