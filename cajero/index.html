@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM</title>
+    <link type="text/css" href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <style>
+        .left, .right {
+          float: left;
+          width: 20%; /* The width is 20%, by default */
+        }
+        
+        .main {
+          float: left;
+          width: 60%; /* The width is 60%, by default */
+        }
+        
+        /* Use a media query to add a breakpoint at 800px: */
+        @media screen and (max-width: 800px) {
+          .left, .main, .right {
+            width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+          }
+        }
+        </style>
+
+
+
+
+<form action="">
+<h1>Ingresa Usuario</h1>
+<label for="">Usuario</label>
+<input type="text" name="u" id="">
+<label for="">Password</label>
+<input type="password" name="c" id="">
+<input type="button" value="ingresar" onclick="login(this.form)">
+</form>
+<script>    
+function login(form){
+if (form.u.value=="mali") {
+if (form.c.value=="123") {
+    location="mali.html";
+} else {
+alert("error de password");
+}
+} else {
+alert("error de usuario");
+}
+}
+
+
+
+
+</script>
+<script src="app.js"></script>
+</body>
+</html>

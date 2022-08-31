@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maui</title>
+    <link type="text/css" href="style.css" rel="stylesheet">
+</head>
+<body>
+<h1>bienvenido a tu cuenta</h1>    
+<label for="">saldo</label>
+<input type="text" name="cantidad" id="C1" value="67">
+<form action="">
+<h2>transferencias</h2>
+<input type="text" name="" id="Cant" placeholder="cantidad">
+<hr>
+<input type="button" value="deposito" id="bt2" onclick="formula1()">
+<input type="button" value="retiro" id="bt3" onclick="formula2()">
+</form>
+<script>
+function formula1() {
+ var cantidadT=parseInt(document.getElementById('Cant').value);   
+ var cantidad1=parseInt(document.getElementById('C1').value);
+document.getElementById('C1').value=(cantidad1+cantidadT);
+}
+function formula2() {
+ var cantidadT=parseInt(document.getElementById('Cant').value);   
+ var cantidad1=parseInt(document.getElementById('C1').value);      
+document.getElementById('C1').value=(cantidad1-cantidadT);
+}
+
+
+
+
+
+</script>
+</body>
+</html>
